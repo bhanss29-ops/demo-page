@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sensing System Demonstration</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #0e0e0e;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+p {
+    max-width: 700px;
+}
+
+/* Demo */
+.demo-box {
+    border: 1px solid #333;
+    padding: 10px;
+    background: #000;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #1a1a1a;
+}
+
+tr:hover {
+    background: #1f1f1f;
+}
+
+/* Diptych styling */
+.diptych {
+    background: #141414;
+    padding: 20px;
+    border-left: 3px solid #555;
+}
+
+/* Small note */
+.note {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- TITLE -->
+<section>
+    <h1>Webcam Sensing System</h1>
+    <p>
+        A system that observes user behavior through a webcam, interprets visible signals,
+        and responds in real time.
+    </p>
+</section>
+
+<!-- LIVE DEMO -->
+<section>
+    <h2>Live Demo</h2>
+
+    <div class="demo-box">
+        <!-- 🔴 REPLACE THIS LINK WITH YOUR ACTUAL DEPLOYED PROTOTYPE -->
+        <iframe src="https://charming-crumble-2e84a0.netlify.app/"></iframe>
+    </div>
+
+    <p class="note">
+        This demo requires webcam access. No footage is recorded or stored.
+    </p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section>
+    <h2>How It Works</h2>
+    <p>
+        The system uses a webcam to track visual signals such as face position,
+        eye direction, and movement. These signals are interpreted into behavioral
+        states using predefined rules. Based on the detected state, the system
+        responds by adjusting visual feedback in real time.
+    </p>
+</section>
+
+<!-- CONTROL LANGUAGE TABLE -->
+<section>
+    <h2>Control Language</h2>
+
+    <table>
+        <tr>
+            <th>State</th>
+            <th>Detection Logic</th>
+            <th>System Response</th>
+        </tr>
+
+        <!-- 🔴 EDIT THESE TO MATCH YOUR ACTUAL PROJECT -->
+        <tr>
+            <td>Engaged</td>
+            <td>Face centered, eyes forward</td>
+            <td>Interface brightens, positive feedback</td>
+        </tr>
+
+        <tr>
+            <td>Disengaged</td>
+            <td>Looking away for several seconds</td>
+            <td>Interface dims, warning cue appears</td>
+        </tr>
+
+        <tr>
+            <td>Unstable Movement</td>
+            <td>Frequent or rapid motion detected</td>
+            <td>Visual tension increases</td>
+        </tr>
+
+    </table>
+</section>
+
+<!-- DIPTYCH -->
+<section>
+    <h2>Diptych Framing</h2>
+
+    <div class="diptych">
+        <p>
+            This system operates on the side of pressure. It reinforces the awareness
+            of being watched by reacting whenever attention shifts or behavior changes.
+            Sitting in front of it feels evaluative, as if performance is constantly
+            being measured in real time.
+        </p>
+
+        <p>
+            If this system were designed around possibility instead, it would feel more
+            supportive and less corrective. Rather than highlighting moments of failure,
+            it would encourage engagement and reward curiosity, creating a more open
+            and exploratory experience.
+        </p>
+    </div>
+</section>
+
+</div>
+
+</body>
+</html>
